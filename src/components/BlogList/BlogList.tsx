@@ -14,7 +14,7 @@ const BlogList: React.FC<BlogListProps> = ({ blogs }) => {
       <Typography variant="h3" textAlign="center">
         Blogs
       </Typography>
-      {blogs.map((blog: any) => (
+      {blogs.map((blog: BlogType) => (
         <BlogItem key={blog.id} blog={blog} />
       ))}
     </Stack>

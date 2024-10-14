@@ -8,6 +8,8 @@ type BlogItemProps = {
   blog: BlogType;
 };
 
+const MAX_TEXT_LENGTH = 70;
+
 const BlogItem: React.FC<BlogItemProps> = ({ blog }) => {
   return (
     <Link className={styles.blogItem} href={`/blog/${blog.id}`}>
@@ -18,8 +20,8 @@ const BlogItem: React.FC<BlogItemProps> = ({ blog }) => {
               {blog.title}
             </Typography>
             <Typography variant="body1" className={styles.blogDescription}>
-              {blog.body.slice(0, 70)}
-              {blog.body.length > 70 && "..."}
+              {blog.body.slice(0, MAX_TEXT_LENGTH)}
+              {blog.body.length > MAX_TEXT_LENGTH && "..."}
             </Typography>
           </Stack>
         </CardContent>

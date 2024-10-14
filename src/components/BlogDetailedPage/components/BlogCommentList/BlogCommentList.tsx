@@ -12,7 +12,7 @@ export const BlogCommentList: React.FC<BlogCommentListProps> = ({
 }) => {
   return (
     <Stack gap="12px">
-      {blogComments.map((comment: any) => (
+      {blogComments.map((comment: BlogCommentType) => (
         <BlogCommentItem key={comment.id} comment={comment} />
       ))}
     </Stack>
