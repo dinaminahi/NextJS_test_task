@@ -1,0 +1,31 @@
+.blogDetailsPage {
+  padding: 16px;
+  color: "#D7DEE5";
+
+  .blogTitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .blogDescription {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .commentsTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .backButtonWrapper {
+    text-decoration: none;
+  }
+  .backButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
